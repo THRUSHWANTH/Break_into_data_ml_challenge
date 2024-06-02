@@ -49,8 +49,8 @@ The data for this project is sourced from Ausgrid's Solar Home Electricity Data,
 ## Development and Deployment
 
 ### Development
-- **Environment**: Vertex AI Workbench / Colab
-- **Models Developed**: SARIMA and XGBoost
+- **Environment**: Vertex AI Workbench 
+- **Models Developed**: XGBoost
 
 ### Deployment (XGBoost)
 1. **Generate Model Artifacts**: Train the XGBoost model and save it as a model artifact.
