@@ -1,9 +1,9 @@
 # Solar Home Electricity Forecasting
 
 ## Contributors
-- Thrushwanth Kakuturu
-- Kamakshi
-- Sireesha
+- Thrushwanth Kakuturu (My self)
+- Gnanambal Kamakshi Renganathan
+- Sireesha Pulipati(Team Lead)
 
 ## Overview
 Ausgrid is a major electricity distributor in Australia, responsible for managing and distributing electricity to residential, commercial, and industrial consumers. Recently, Ausgrid has focused on integrating renewable energy sources into its grid infrastructure to reduce carbon emissions and promote sustainability.
@@ -39,21 +39,15 @@ A scalable machine learning system for tree boosting, particularly suited for la
 1. **Generate Model Artifacts**: Train the XGBoost model and save it as a model artifact.
 2. **Upload to Google Cloud Storage (GCS)**: Upload the model artifact to a designated GCS bucket.
 3. **Import the Model into Vertex AI**: Import the model into Vertex AI for deployment.
-4. **Deploy to Vertex Endpoint**: Deploy the model to a Vertex endpoint for serving predictions.
-
-## Usage Instructions
-1. **Data Preprocessing**: Process the solar data to extract and engineer relevant features.
-2. **Model Training**: Train the XGBoost model using the preprocessed data.
-3. **Model Evaluation**: Evaluate the model's performance on a test dataset.
-4. **Deployment**: Deploy the trained model to Google Cloud's Vertex AI for real-time predictions.
+4. **Deploy to Vertex Endpoint**: Deploy the model to a Vertex endpoint for serving next month predictions for every customer.
 
 ## Technologies Used
 - **Programming Languages**: Python
-- **Libraries**: XGBoost, Pandas, NumPy, Scikit-learn, Matplotlib
+- **Libraries**: XGBoost, Pandas, NumPy, Scikit-learn, Matplotlib, statsmodels
 - **Platform**: Google Cloud (Vertex AI, Google Cloud Storage)
 
 ## Conclusion
-This project successfully developed and deployed an XGBoost model to forecast solar home electricity consumption. The integration of SARIMA and XGBoost models, combined with deployment on Google Cloud's Vertex AI, provides a robust solution for managing renewable energy in the power system. The forecasting model aids in optimal energy management, contributing to Ausgrid's sustainability goals.
+This project successfully developed and deployed an XGBoost model to forecast solar home electricity consumption. The development of XGBoost modelf, combined with deployment on Google Cloud's Vertex AI, provides a robust solution for managing renewable energy in the power system. The forecasting model aids in optimal energy management, contributing to Ausgrid's sustainability goals.
 
 
 
