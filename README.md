@@ -23,7 +23,7 @@ The data for this project is sourced from Ausgrid's Solar Home Electricity Data,
   \]
 
 ## Forecasting Models
-### SARIMA
+### SARIMA 
 - **Model**: SARIMAX(0, 1, 2)x(1, 0, 1, 12)
 - **Best Parameters from Grid Search**: (0, 0, 2)
   - Non-Seasonal Parameters: p=5, d=1, q=2
@@ -34,7 +34,7 @@ The data for this project is sourced from Ausgrid's Solar Home Electricity Data,
   - Best Grid Search MAPE: 16.544
   - Best Grid Search RMSE: 187509.107
 
-### XGBoost
+### XGBoost - For next Month Prediction
 - **Model**: XGBRegressor
   - Learning Rate: 0.05
   - Max Depth: 5
