@@ -24,10 +24,27 @@ The data for this project is sourced from Ausgrid's Solar Home Electricity Data,
 
 ## Forecasting Models
 ### SARIMA
-A statistical model for time series forecasting that can capture seasonality, trend, and noise in the data.
+- **Model**: SARIMAX(0, 1, 2)x(1, 0, 1, 12)
+- **Best Parameters from Grid Search**: (0, 0, 2)
+  - Non-Seasonal Parameters: p=5, d=1, q=2
+  - Seasonal Parameters: P=0, D=0, Q=2 (seasonal MA term at lag 12)
+- **Evaluation Metrics**:
+  - MAPE: 27.672
+  - RMSE: 149027.037
+  - Best Grid Search MAPE: 16.544
+  - Best Grid Search RMSE: 187509.107
 
 ### XGBoost
-A scalable machine learning system for tree boosting, particularly suited for large datasets and high-dimensional features.
+- **Model**: XGBRegressor
+  - Learning Rate: 0.05
+  - Max Depth: 5
+  - Subsample: 1.0
+  - Colsample by Tree: 0.8
+  - N Estimators: 300
+- **Evaluation Metrics**:
+  - RMSE: 101.36
+  - MAPE: 40.54
+  - sMAPE: 25.24
 
 ## Development and Deployment
 
@@ -47,8 +64,4 @@ A scalable machine learning system for tree boosting, particularly suited for la
 - **Platform**: Google Cloud (Vertex AI, Google Cloud Storage)
 
 ## Conclusion
-This project successfully developed and deployed an XGBoost model to forecast solar home electricity consumption. The development of XGBoost modelf, combined with deployment on Google Cloud's Vertex AI, provides a robust solution for managing renewable energy in the power system. The forecasting model aids in optimal energy management, contributing to Ausgrid's sustainability goals.
-
-
-
-
+This project successfully developed and deployed an XGBoost model to forecast solar home electricity consumption. By encapsulating our XGBoost model into a container and creating a custom model using Google Cloud's Vertex AI, we have made it accessible for inference and predictions. This deployment provides a robust solution for managing renewable energy within the power system. Our forecasting model aids in optimal energy management, ensuring efficient control of energy supply and significantly contributing to Ausgrid's sustainability goals. Through this project, we have demonstrated how advanced machine learning techniques and cloud technologies can be leveraged to address critical challenges in renewable energy integration and management.
